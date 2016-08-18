@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/blyster962/auth-microservice/issues"
   },
-  "homepage": "https://github.com/blyster962/auth-microservice#readme"
+  "homepage": "https://github.com/blyster962/auth-microservice#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "js-yaml": "^3.6.1",
+    "mysql": "^2.11.1",
+    "restify": "^4.1.1",
+    "sequelize": "^3.24.1",
+    "sqlite3": "^3.1.4"
+  }
 }
