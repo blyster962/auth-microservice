@@ -121,6 +121,7 @@ exports.sanitizedUser = function(user) {
   return {
     id: user.username,
     username: user.username,
+    password: user.password,
     provider: user.provider,
     familyName: user.familyName,
     givenName: user.givenName,

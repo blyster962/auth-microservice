@@ -103,7 +103,7 @@ server.get('/find/:username', (req, res, next) => {
 
 // Delete or Destroy a user record
 server.del('/destroy/:username', (req, res, next) => {
-  userModel.destroy(req.params.username)
+  usersModel.destroy(req.params.username)
   .then(() => { res.send({}); next(false); })
   .catch(err => {
     res.send(500, err);
@@ -114,7 +114,7 @@ server.del('/destroy/:username', (req, res, next) => {
 
 // Check password
 server.post('/passwordCheck', (req, res, next) => {
-  userModel.userPasswordCheck(req.params.username, req.params.password)
+  usersModel.userPasswordCheck(req.params.username, req.params.password)
   .then(check => { res.send(check); next(false); })
   .catch(err => {
     res.send(500, err);
